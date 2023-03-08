@@ -20,7 +20,7 @@
                         url:"https://Romanssini.pythonanywhere.com/api",
                         type:"POST",
                         contentType: "application/json",
-                        data: JSON.stringfy({"peso":peso,"altura":altura})
+                        data: JSON.stringify({ "peso": peso, "altura": altura })
                     }).done(function(data) {$("h1").html("IMC: " + data["resultado"])})
                 })
             })
