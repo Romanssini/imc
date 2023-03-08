@@ -17,7 +17,7 @@
                     var peso = parseFloat($("#inp_peso").val())
                     var altura = parseFloat($("#inp_altura").val())
                     $.ajax({
-                        url:"Romanssini.pythonanywhere.com/api",
+                        url:"https://Romanssini.pythonanywhere.com/api",
                         type:"POST",
                         contentType: "application/json",
                         data: JSON.stringfy({"peso":peso,"altura":altura})
